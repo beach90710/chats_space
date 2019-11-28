@@ -47,8 +47,8 @@ $(function(){
         $('.form__submit').prop('disabled', false);
         return false;
      })
-    .fail(function(error) {
-      alert(error);
+    .fail(function() {
+      alert('message error');
     })
   })
 
