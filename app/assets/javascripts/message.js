@@ -44,12 +44,12 @@ $(function(){
  
         $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
         $('#new_message')[0].reset();
-        $('.form__submit').prop('disabled', false);
-        return false;
+        
      })
     .fail(function() {
       alert('message error');
     })
+    return false;
   })
 
   var reloadMessages = function() {
