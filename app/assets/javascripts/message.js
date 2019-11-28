@@ -2,7 +2,7 @@ $(function(){
 
   function buildHTML(message) {
     
-    var imagehtml = message.image == null ? "" : `<img src="${message.image}" class="message__text__image">`
+    var imagehtml = message.image == null ? "" : `<img src="${message.image}" class="lower-message__image">`
     
     var html = `<div class="message" data-message-id="${ message.id }">
                   <div class="upper-message">
@@ -47,8 +47,8 @@ $(function(){
         $('.form__submit').prop('disabled', false);
         return false;
      })
-    .fail(function() {
-      alert('message error');
+    .fail(function(error) {
+      alert(error);
     })
   })
 
