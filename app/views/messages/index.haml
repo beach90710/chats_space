@@ -14,7 +14,8 @@
               = member.name
       .right-header
         .right-header__button
-          Edit
+          =link_to edit_group_path(params[:group_id]), class:"right-header__button" do
+            Edit
     .messages
       = render @messages
     .form
